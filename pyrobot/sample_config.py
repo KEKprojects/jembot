@@ -27,15 +27,15 @@ load_dotenv("config.env")
 class Config:
     LOGGER = True
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH", None)
+    APP_ID = int(os.environ.get("APP_ID", "6680952"))
+    API_HASH = os.environ.get("API_HASH", "c717492148c5ff7e716d8f5876708e7a")
     # Get these values from my.telegram.org
     TG_COMPANION_BOT = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
     # specify command handler that should be used for the plugins
     # this should be a valid "regex" pattern
-    COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "/")
+    COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "!")
     # This is required for the plugins involving the file system.
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DLS/")
     # For Databases
